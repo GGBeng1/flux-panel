@@ -16,7 +16,7 @@ var (
 
 func init() {
 	v.SetConfigName("gost")
-	v.AddConfigPath("/etc/gost/")
+	v.AddConfigPath("/etc/flux-gost/")
 	v.AddConfigPath("$HOME/.gost/")
 	v.AddConfigPath(".")
 }
