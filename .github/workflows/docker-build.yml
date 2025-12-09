@@ -124,7 +124,7 @@ jobs:
 
   create-release:
     name: Create Release and Tag
-    needs: [check-version, build-gost, build-vite, build-java]
+    needs: [check-version, build-gost]
     if: needs.check-version.outputs.should_build == 'true'
     runs-on: ubuntu-latest
     permissions:
